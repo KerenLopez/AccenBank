@@ -256,7 +256,7 @@ fig_6.add_trace(go.Pie(labels=df_grouped_5['Nombre Producto'], values=df_grouped
 ###**Installing and importing libraries**
 """
 
-pip install -q dash==1.19.0
+!pip install -q dash==1.19.0
 
 !pip install werkzeug==2.0.3
 
