@@ -258,24 +258,18 @@ fig_6.add_trace(go.Pie(labels=df_grouped_5['Nombre Producto'], values=df_grouped
 
 pip install -q dash==1.19.0
 
-pip install -q jupyter_dash==0.3.0
-
 !pip install werkzeug==2.0.3
 
 !pip install -U dash
 
-!pip install -U jupyter_dash
-
-pip install --upgrade dash jupyter-dash
-
 import dash
-from jupyter_dash import JupyterDash
 import dash_html_components as html
 import dash_core_components as dcc
 
 """###**Making the app**"""
 
-app = JupyterDash(__name__)
+app = Dash(__name__)
+server=app.server
 logo_link = 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Accenture.svg/2560px-Accenture.svg.png'
 
 header_content = html.Div(
