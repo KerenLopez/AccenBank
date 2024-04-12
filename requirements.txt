@@ -1,0 +1,4 @@
+gunicorn
+pandas
+dash==1.19.0
+numpy
