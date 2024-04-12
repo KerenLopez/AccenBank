@@ -255,7 +255,7 @@ fig_6.add_trace(go.Pie(labels=df_grouped_5['Nombre Producto'], values=df_grouped
 
 ###**Installing and importing libraries**
 """
-import dash
+from dash import Dash
 import dash_html_components as html
 import dash_core_components as dcc
 
